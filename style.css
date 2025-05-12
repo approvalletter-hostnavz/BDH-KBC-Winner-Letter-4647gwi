@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 11px;
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+  letter-spacing: 0;
 }
 
 #imagePreview {
   position: absolute;
-  top: 182px;
-  left: 10px;
-  width: 40px;
-  height: 45px;
+  top: 210px;
+  left: 275px;
+  width: 50px;
+  height: 60px;
   display: none;
   border: 1px solid black;
   margin-top: 10px;
 }
 
-.form{
+.form {
   margin-top: 10px;
   padding-left: 10px;
 }
@@ -32,7 +33,7 @@
   border: 1px solid #777;
 }
 
-.apr{
+.apr {
   width: 100%;
   background-image: url(letter.jpg);
   background-repeat: no-repeat;
@@ -44,25 +45,25 @@
   margin-bottom: 8px;
 }
 
-.apr .p1{
-  padding-top: 110px;
-  margin-left: 10px;
+.apr .p1 {
+  padding-top: 115px;
+  margin-left: 20px;
 }
 
-.apr .p2{
+.apr .p2 {
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 5px;
 }
 
-.apr .p3{
+.apr .p3 {
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 5px;
 }
 
-.apr #date{
+.apr #date {
   position: absolute;
   padding-top: 90px;
-  margin-left: 247px;
+  margin-left: 255px;
 }
