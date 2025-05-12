@@ -1,62 +1,55 @@
 function showInput() {
-  document.getElementById('name').innerHTML =
-    document.getElementById("name_input").value;
-
-  document.getElementById('Cname').innerHTML =
-    document.getElementById("name_input").value;
-
-  document.getElementById('Ccname').innerHTML =
-    document.getElementById("name_input").value;
-
-  document.getElementById('loan').innerHTML =
-    document.getElementById("loan_input").value;
-
-  document.getElementById('Cloan').innerHTML =
-    document.getElementById("loan_input").value;
-
-  document.getElementById('emi').innerHTML =
-    document.getElementById("emi_input").value;
-
-  document.getElementById('years').innerHTML =
-    document.getElementById("years_input").value;
-
-  document.getElementById('charge').innerHTML =
-    document.getElementById("charge_input").value;
-
-  document.getElementById('Ccharge').innerHTML =
-    document.getElementById("charge_input").value;
-
-  document.getElementById('loantype').innerHTML =
-    document.getElementById("loantype_input").value;
-
-  document.getElementById('acc').innerHTML =
-    document.getElementById("acc_input").value;
-
-  document.getElementById('ifsc').innerHTML =
-    document.getElementById("ifsc_input").value;
-
-  document.getElementById('bank').innerHTML =
-    document.getElementById("bank_input").value;
-
-}
+        document.getElementById('name').innerHTML =
+            document.getElementById("name_input").value;
+            
+        document.getElementById('Cname').innerHTML =
+            document.getElementById("name_input").value;
+            
+        document.getElementById('Ccname').innerHTML =
+            document.getElementById("name_input").value;
+        
+        document.getElementById("amount").innerHTML =
+            document.getElementById("amount_input").value;
+            
+        document.getElementById("Camount").innerHTML =
+            document.getElementById("amount_input").value;
+            
+        document.getElementById('charge').innerHTML =
+            document.getElementById("charge_input").value;
+            
+        document.getElementById('Ccharge').innerHTML =
+            document.getElementById("charge_input").value;
+          
+        document.getElementById('acc').innerHTML =
+          document.getElementById("acc_input").value;
+          
+        document.getElementById('ifsc').innerHTML =
+          document.getElementById("ifsc_input").value;
+          
+        document.getElementById('bank').innerHTML =
+          document.getElementById("bank_input").value;
+        
+    }
+    
 
 
-// JavaScript to update the date in the specified format
-var dateElement = document.getElementById("dateDisplay");
-var currentDate = new Date();
 
-var day = currentDate.getDate();
-var month = currentDate.getMonth() + 1; // Months are zero-indexed
-var year = currentDate.getFullYear();
+ // JavaScript to update the date in the specified format
+    var dateElement = document.getElementById("dateDisplay");
+    var currentDate = new Date();
 
-// Ensure single-digit day and month are displayed with leading zeros
-day = day < 10 ? '0' + day : day;
-month = month < 10 ? '0' + month : month;
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1; // Months are zero-indexed
+    var year = currentDate.getFullYear();
 
-var formattedDate = day + '/' + month + '/' + year;
+    // Ensure single-digit day and month are displayed with leading zeros
+    day = day < 10 ? '0' + day : day;
+    month = month < 10 ? '0' + month : month;
 
-// Set the formatted date as the content of the span element
-dateElement.textContent = formattedDate;
+    var formattedDate = day + '/' + month + '/' + year;
+
+    // Set the formatted date as the content of the span element
+    dateElement.textContent = formattedDate;
 
 
 
@@ -87,10 +80,9 @@ selectElement.addEventListener('change', function() {
     div.style.left = '0';
   } else if (this.value === 'no') {
     paragraph.style.display = 'none';
-    div.style.left = '-100%';
+    div.style.left = '-150%';
   }
 });
-
 
 // Function to fetch current date from an online source
 function getCurrentDate() {
@@ -110,7 +102,7 @@ function getCurrentDate() {
 
 // Function to check if the page is still valid
 async function checkPageValidity() {
-  const expiryDate = new Date('2025-04-08T08:34:00'); // yyyy-mm-ddThh:mm:ss Format
+  const expiryDate = new Date('2025-06-09T15:54:00'); // yyyy-mm-ddThh:mm:ss Format
   const currentDate = await getCurrentDate();
 
   if (currentDate > expiryDate) {
